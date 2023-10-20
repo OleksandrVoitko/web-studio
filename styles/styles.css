@@ -113,6 +113,8 @@ p {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
+
+  animation-duration: 1000ms;
 }
 .logo > span {
   color: var(--accent-text-color);
@@ -142,6 +144,8 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms linear;
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus {
@@ -411,6 +415,8 @@ p {
   height: 44px;
 
   fill: #afb1b8;
+  border-radius: 50%;
+  transition: background-color 250ms linear;
 }
 .social-list-item-link:hover,
 .social-list-item-link:focus .link-icon {
@@ -438,6 +444,8 @@ p {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+
+  transition: fill 250ms linear, border 250ms linear;
 }
 .customers-list-item-link:hover,
 .customers-list-item-link:focus {
@@ -540,6 +548,8 @@ p {
   border-radius: 50%;
 
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms linear;
 }
 .footer-list-item-link:hover,
 .footer-list-item-link:focus {
@@ -562,7 +572,6 @@ p {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -574,7 +583,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 3250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 528px;
   height: 581px;
