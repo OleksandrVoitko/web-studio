@@ -532,7 +532,7 @@
             </li>
           </ul>
         </div>
-        <form class="form-subscribe" action="">
+        <form class="form-subscribe" action="#">
           <h2 class="form-subscribe-title">Subscribe to our newsletter</h2>
           <div class="form-subscribe-wrapper">
             <input
@@ -542,7 +542,9 @@
               placeholder="E-mail"
               required
             />
-            <button class="button primary subscribe-btn">Subscribe</button>
+            <button class="button primary subscribe-btn" type="submit">
+              Subscribe
+            </button>
           </div>
         </form>
       </div>
@@ -551,7 +553,85 @@
     <!-- Section MODAL -->
     <div data-backdrop class="backdrop is-hidden">
       <div class="modal">
-        <button data-close-modal class="modal-close-btn"></button>
+        <form class="modal-form" action="#" method="get">
+          <button data-close-modal class="modal-close-btn" type="button">
+            <svg class="close-btn-icon" , width="11" , height="11">
+              <use href="./img/sprite.svg#icon-close-form"></use>
+            </svg>
+          </button>
+          <h2 class="modal-form-title">
+            Leave your details, we will call you back
+          </h2>
+          <label class="modal-form-input-wrapper">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              minlength="2"
+              placeholder=" "
+              required
+            />
+            <span class="modal-form-label">Name</span>
+            <svg class="modal-form-icon" width="13" , height="13">
+              <use href="./img/sprite.svg#icon-name-form"></use>
+            </svg>
+          </label>
+          <label class="modal-form-input-wrapper">
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user-tel"
+              placeholder=" "
+              required
+            />
+            <span class="modal-form-label">Phone number</span>
+            <svg class="modal-form-icon" width="13" , height="13">
+              <use href="./img/sprite.svg#icon-tel-form"></use>
+            </svg>
+          </label>
+          <label class="modal-form-input-wrapper">
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+              placeholder=" "
+              required
+            />
+            <span class="modal-form-label">E-mail</span>
+            <svg class="modal-form-icon" width="13" , height="13">
+              <use href="./img/sprite.svg#icon-email-form"></use>
+            </svg>
+          </label>
+          <label class="modal-form-textarea-wrapper">
+            <textarea
+              class="modal-form-textarea"
+              name="comments"
+              minlength="10"
+              placeholder=" "
+            ></textarea>
+            <span class="modal-form-label textarea">Comments</span>
+          </label>
+          <label class="modal-form-option-wrapper">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              name="policy"
+              value="accept-policy"
+              required
+            />
+            <span class="checkbox-icon"></span>
+            <span class="modal-form-option-span"
+              >I agree with the newsletter and accept<a
+                class="modal-form-option-link"
+                href="#"
+                >Agreement conditions</a
+              ></span
+            >
+          </label>
+          <button class="button primary modal-button" type="submit">
+            Send
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/index.js"></script>
