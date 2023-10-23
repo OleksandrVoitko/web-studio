@@ -603,9 +603,9 @@ p {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  background-image: url(../img/modal/icon-check.svg);
+  background-image: url(../img/modal/close-modal.svg);
   background-repeat: no-repeat;
-  background-position: right -8px bottom -8px;
+  background-position: right 8px bottom 8px;
 
   cursor: pointer;
 }
