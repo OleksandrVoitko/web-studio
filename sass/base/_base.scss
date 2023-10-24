@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-background-color;
+  color: $secondary-text-color;
+
+  font-family: $main-font;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.logo {
+  display: block;
+
+  color: $logo-black-color;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  /*From section: WHAT WE DO, OUR TEAM, REGULAR CUSTOMERS */
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none; /* Removing the underline form a link */
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button {
+  &.primary {
+    @include button($accent-color, $white-color);
+  }
+  &.secondary {
+    @include button($white-color, $accent-color);
+  }
+}
