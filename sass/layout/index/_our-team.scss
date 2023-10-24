@@ -1,0 +1,77 @@
+%styles-from-link-icon {
+  background-color: $accent-color;
+  border-radius: 50%;
+  fill: $white-color;
+}
+
+.team {
+  background-color: $secondary-background-color;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $primary-background-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .image {
+    margin-bottom: 30px;
+  }
+
+  .name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    @include font(normal, 500, 16px, 1.19, 0.03em);
+    text-align: center;
+  }
+
+  .position {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: $primary-text-color;
+
+    @include font(normal, 400, 16px, 1.19, 0.03em);
+    text-align: center;
+  }
+}
+
+.social-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  fill: $grey-color;
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus .link-icon {
+    @extend %styles-from-link-icon;
+  }
+}

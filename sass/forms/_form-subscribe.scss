@@ -1,0 +1,56 @@
+.form-subscribe-title {
+  margin-bottom: 20px;
+
+  font-family: $main-font;
+  @include font(normal, 900, 14px, 1.14, 0.03em);
+
+  text-transform: uppercase;
+
+  color: $white-text-color;
+}
+
+.form-subscribe-wrapper {
+  display: flex;
+}
+
+.form-subscribe-input {
+  margin-right: 12px;
+
+  font-family: $main-font;
+
+  @include font(normal, 400, 16px, 1.4, 0.03em);
+
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: $white-text-color;
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10px;
+  padding-right: 29px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  height: 50px;
+
+  font-family: $main-font;
+  @include font(normal, 700, 16px, 1.87, 0.06em);
+
+  border-radius: 4px;
+}
+
+.subscribe-btn-icon {
+  margin-left: 10px;
+}

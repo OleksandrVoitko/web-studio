@@ -6,3 +6,17 @@
 
   border: 1px solid transparent;
 }
+
+@mixin font(
+  $font-style,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing
+) {
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

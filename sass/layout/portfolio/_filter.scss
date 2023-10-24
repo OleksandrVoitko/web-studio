@@ -1,0 +1,23 @@
+.filter {
+  padding-top: 94px;
+
+  text-align: center;
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    padding: 6px 22px;
+    border-radius: 4px;
+    margin-right: 8px;
+
+    cursor: pointer;
+
+    &.secondary {
+      background-color: $secondary-background-color;
+      color: $secondary-text-color;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.features {
+  padding-top: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    @include font(normal, 700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    text-align: center;
+  }
+
+  .description {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $primary-text-color;
+
+    @include font(normal, 400, 14px, 1.71, 0.03em);
+  }
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+}
