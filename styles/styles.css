@@ -1,0 +1,211 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  --accent-color: #2196f3;
+
+  --logo-black-color: #000000;
+  --logo-light-color: #ffffff;
+
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-text-color: #2196f3;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--secondary-text-color);
+
+  font-family: var(--main-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none; /* Removing the underline form a link */
+}
+
+/* Section HEADER */
+.logo {
+  color: var(--logo-black-color);
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo > span {
+  color: var(--accent-text-color);
+}
+
+.navigatio-list-link {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.navigatio-list-link:hover,
+.navigatio-list-link:focus {
+  color: var(--accent-text-color);
+}
+.navigatio-list-link.link-aktive {
+  color: var(--accent-text-color);
+}
+
+.auth-list-link {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-list-link:hover,
+.auth-list-link:focus {
+  color: var(--accent-text-color);
+}
+
+.button.primary {
+  background-color: var(--accent-text-color);
+  color: #ffffff;
+
+  font-family: inherit;
+}
+
+.button.secondary {
+  background-color: #ffffff;
+  color: var(--accent-text-color);
+
+  font-family: inherit;
+}
+
+.title {
+  /*From section: WHAT WE DO, OUR TEAM, REGULAR CUSTOMERS */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Section HERO */
+.hero-title {
+  color: #ffffff;
+  background-color: black;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* FEATURES */
+.features-list-item .subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list-item .description {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Section WHAT WE DO */
+.we-do-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Section OUR TEAM */
+.our-team {
+  background-color: var(--secondary-background-color);
+}
+
+/* Section OUR TEAM */
+.team-list-item .name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list-item .position {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Section REGULAR CUSTOMERS */
+
+/* Section FOOTER */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .logo {
+  color: var(--logo-light-color);
+}
+
+.contacts-address {
+  color: #ffffff;
+}
+.contacts-address:hover,
+.contacts-address:focus {
+  color: var(--accent-text-color);
+}
+
+.contacts-mail,
+.contacts-tel {
+  color: var(--primary-text-color);
+}
+.contacts-mail:hover,
+.contacts-tel:hover,
+.contacts-mail:focus,
+.contacts-tel:focus {
+  color: var(--accent-text-color);
+}
+
+.footer-title {
+  color: #ffffff;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
