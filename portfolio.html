@@ -74,12 +74,26 @@
       <!-- Section FILTER -->
       <section class="filter">
         <h2 hidden>Filter</h2>
-        <div class="container">
-          <button class="button primary" type="button">All</button>
-          <button class="button secondary" type="button">Web sites</button>
-          <button class="button secondary" type="button">Applications</button>
-          <button class="button secondary" type="button">Design</button>
-          <button class="button secondary" type="button">Marketing</button>
+        <div class="container filter-js">
+          <button class="button primary" type="button" data-type="all">
+            All
+          </button>
+          <button class="button secondary" type="button" data-type="web-site">
+            Web sites
+          </button>
+          <button
+            class="button secondary"
+            type="button"
+            data-type="application"
+          >
+            Applications
+          </button>
+          <button class="button secondary" type="button" data-type="design">
+            Design
+          </button>
+          <button class="button secondary" type="button" data-type="marketing">
+            Marketing
+          </button>
         </div>
       </section>
       <!-- Section WORK EXAMPLES -->
@@ -87,7 +101,7 @@
         <div class="container">
           <h2 hidden>Work examples</h2>
           <ul class="work-list list">
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="web-site">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -114,7 +128,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="design">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -143,7 +157,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="application">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -170,7 +184,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="marketing">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -197,7 +211,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="application">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -224,7 +238,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="web-site">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -251,7 +265,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="design">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -278,7 +292,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="marketing">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -305,7 +319,7 @@
                 </div>
               </a>
             </li>
-            <li class="work-list-item">
+            <li class="work-list-item" data-type="application">
               <a class="work-list-link link" href="">
                 <div class="work-list-img-wrapper">
                   <img
@@ -425,5 +439,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/filter.js" type="module"></script>
   </body>
 </html>

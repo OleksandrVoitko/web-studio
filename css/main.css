@@ -866,6 +866,10 @@ p {
   color: #212121;
 }
 
+.display-none {
+  display: none;
+}
+
 .work-examples {
   padding-top: 50px;
   padding-bottom: 94px;
@@ -881,12 +885,7 @@ p {
 
 .work-list-item {
   width: 370px;
-}
-.work-list-item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 30px;
-}
-.work-list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin: 10px;
 }
 .work-list-item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
