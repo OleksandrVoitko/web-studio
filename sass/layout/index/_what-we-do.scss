@@ -1,3 +1,9 @@
+.we-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .we-do-list {
   display: flex;
 }
@@ -25,7 +31,6 @@
 
   @include font(normal, 700, 14px, 1.14, 0.03em);
   text-align: center;
-
   text-transform: uppercase;
   color: $white-text-color;
 

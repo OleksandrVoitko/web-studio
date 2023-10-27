@@ -31,6 +31,4 @@ function onFilterBtnClick(e) {
       }
     });
   }
-
-  console.log(refs.workListItem);
 }

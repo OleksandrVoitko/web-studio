@@ -1,7 +1,7 @@
 %styles-from-link-icon {
   background-color: $accent-color;
   border-radius: 50%;
-  fill: $white-color;
+  fill: $white-fill-color;
 }
 
 .team {
@@ -10,23 +10,49 @@
 
 .team-list {
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .team-list-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   background-color: $primary-background-color;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 30px;
   }
 
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:not(:nth-child(2n)) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 0px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
   .image {
+    width: 100%;
     margin-bottom: 30px;
   }
 
@@ -40,10 +66,9 @@
 
   .position {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     color: $primary-text-color;
-
     @include font(normal, 400, 16px, 1.19, 0.03em);
     text-align: center;
   }
@@ -51,11 +76,18 @@
 
 .social-list {
   display: flex;
-  margin-bottom: 30px;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
+.social-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-list-item-link {
@@ -66,12 +98,17 @@
   width: 44px;
   height: 44px;
 
-  fill: $grey-color;
+  fill: $grey-fill-color;
   border-radius: 50%;
   transition: background-color 250ms linear;
 
-  &:hover,
-  &:focus .link-icon {
+  &:hover {
     @extend %styles-from-link-icon;
+  }
+
+  &:focus {
+    .link-icon {
+      @extend %styles-from-link-icon;
+    }
   }
 }

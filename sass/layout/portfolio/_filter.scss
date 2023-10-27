@@ -1,17 +1,26 @@
 .filter {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 25px;
 
-  text-align: center;
+  text-align: start;
 
-  .container {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 80px;
+    padding-top: 94px;
+    padding-bottom: 35px;
   }
 
   .button {
+    margin-right: 8px;
+    margin-bottom: 15px;
+
     padding: 6px 22px;
     border-radius: 4px;
-    margin-right: 8px;
 
     cursor: pointer;
 

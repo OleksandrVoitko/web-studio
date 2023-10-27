@@ -1,14 +1,66 @@
 .features {
-  padding-top: 94px;
+  margin: 0 auto;
+  padding-top: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 }
 
 .features-list {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
 .features-list-item {
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and(max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:not(:nth-child(2n)) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin-right: 30px;
+    }
+  }
+
+  .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    // width: 450px;
+    height: 120px;
+
+    background-color: #f5f4fa;
+
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
   }
 
   .subtitle {
@@ -17,7 +69,6 @@
 
     @include font(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
-
     text-align: center;
   }
 
@@ -26,19 +77,6 @@
     margin-bottom: 0;
 
     color: $primary-text-color;
-
     @include font(normal, 400, 14px, 1.71, 0.03em);
   }
-}
-
-.icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-
-  width: 270px;
-  height: 120px;
-
-  background-color: #f5f4fa;
 }

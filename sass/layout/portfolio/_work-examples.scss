@@ -3,8 +3,11 @@
 }
 
 .work-examples {
-  padding-top: 50px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
 }
 
 .work-list {
@@ -13,19 +16,82 @@
 }
 
 .work-list-item {
-  width: 370px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
 
-  margin: 10px;
+    margin: 10px;
+
+    // &:not(:last-child) {
+    //   margin-bottom: 30px;
+    // }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 354px;
+
+    margin: 7px;
+
+    // &:not(:nth-last-child(-n + 2)) {
+    //   margin-bottom: 30px;
+    // }
+
+    // &:not(:nth-child(2n)) {
+    //   margin-right: 30px;
+    // }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+
+    margin: 10px;
+
+    // &:not(:nth-last-child(-n + 3)) {
+    //   margin-bottom: 30px;
+    // }
+
+    // &:not(:nth-child(3n)) {
+    //   margin-right: 30px;
+    // }
+  }
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    .overlay {
+      transform: translateY(-100%);
+    }
+  }
+  &:focus {
+    .overlay {
+      transform: translateY(-100%);
+    }
+  }
+
+  .card {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
   }
 }
 
-.work-list-link:hover .overlay,
-.work-list-link:focus .overlay {
-  transform: translateY(-100%);
+.work-list-link {
+  &:hover {
+    .overlay {
+      transform: translateY(-100%);
+    }
+  }
+
+  &:focus {
+    .overlay {
+      transform: translateY(-100%);
+    }
+  }
 }
 
 .work-list-img-wrapper {
@@ -35,6 +101,14 @@
 
 .work-list-img {
   display: block;
+  width: 100%;
+
+  @media screen and (min-width: 767px) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
 }
 
 .overlay {
@@ -57,17 +131,6 @@
   @include font(normal, 400, 18px, 1.56, 0.03em);
 
   color: $white-text-color;
-}
-
-.work-list-item .card {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .work-list-title {
