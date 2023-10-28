@@ -528,6 +528,11 @@ body.modal-open {
 .footer .footer-column-first .contacts-address:hover, .footer .footer-column-first .contacts-address:focus {
   color: #2196f3;
 }
+@media screen and (max-width: 767px) {
+  .footer .footer-column-first .contacts-address {
+    margin-bottom: 20px;
+  }
+}
 .footer .footer-column-first .contacts-mail {
   display: inline-block;
   margin-bottom: 9px;
@@ -535,6 +540,11 @@ body.modal-open {
 }
 .footer .footer-column-first .contacts-mail:hover, .footer .footer-column-first .contacts-mailfocus {
   color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .footer .footer-column-first .contacts-mail {
+    margin-bottom: 20px;
+  }
 }
 .footer .footer-column-first .contacts-tel {
   display: inline-block;
